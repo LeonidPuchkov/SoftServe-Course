@@ -1,0 +1,140 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 80px;
+}
+
+header .logo_barber {
+  margin-top: 10px;
+  display: inline-block;
+  width: 162px;
+  height: 44px;
+}
+nav {
+  display: block;
+  float: right;
+  font-size: 18px;
+}
+nav a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #898989;
+}
+
+.carousel {
+  min-height: 555px;
+  background: url(../img/main_bg.jpg) center center/cover no-repeat;
+  background-color: rgba(39, 34, 34, 0.67);
+}
+.carousel__dscr {
+  padding: 246px 0 76px 0;
+}
+.carousel__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  color: white;
+}
+
+.carousel__btn {
+  display: flex;
+  justify-content: center;
+  width: 249px;
+  height: 48px;
+  font-size: 24px;
+  background-color: #dc143c;
+  text-align: center;
+  color: white;
+  border: none;
+  margin: 143px auto 0 auto;
+}
+
+.service h2 {
+  text-align: center;
+  font-size: 48px;
+  color: #dc143c;
+}
+.service__bg {
+  display: block;
+  width: 426px;
+  height: 426px;
+}
+.service__item img {
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+}
+.icon__wrapper {
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__item .service__header {
+  font-size: 18px;
+  font-weight: 900;
+}
+.service__item .service__dscr {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.list {
+  min-height: 1215px;
+  background: url(../img/barbershop2.jpg) center center/cover no-repeat;
+  padding: 115px 0 115px 0;
+}
+
+.list .title {
+  font-size: 48px;
+  color: #dc143c;
+  text-align: center;
+}
+
+.list__name {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+.list__dscr {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.list__price {
+  font-size: 24px;
+  font-weight: 400;
+  color: #dc143c;
+  float: right;
+}
+.list__line {
+  background-color: #fff;
+  width: 1000px;
+  height: 4px;
+}
+.list__btn {
+  width: 244px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  background-color: #dc143c;
+  text-align: center;
+  color: white;
+  border: none;
+  margin: 95px auto 112px auto;
+}

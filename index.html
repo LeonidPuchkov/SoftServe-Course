@@ -4,10 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>New Course</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <h2>Hellow People!</h2>
+    <header class="header">
+      <div class="container">
+        <img class="logo_barber" src="./icons/logo_barber.o.png" alt="logo" />
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Our Services</a>
+          <a href="#">Price</a>
+          <a href="#">Gallery</a>
+          <a href="#">Barbers</a>
+          <a href="#">Contacts</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="carousel">
+      <div class="container">
+        <!-- <img src="" alt="mainbckg_img" /> -->
+        <div class="carousel__dscr">
+          <p class="carousel__title">Making Your Look Awesome & Manly</p>
+          <button class="carousel__btn">More About Us</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="container">
+        <h2 class="title">Our Services</h2>
+        <img class="service__bg" src="./img/service_bg.jpg" alt="blade" />
+        <div class="service__item">
+          <div class="icon__wrapper">
+            <img src="./icons/beard.png" alt="service__icon" />
+          </div>
+          <div class="service__text">
+            <div class="service__header">Beard Shaper</div>
+            <div class="service__dscr">There are many variations of ofeven slightly..</div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="icon__wrapper">
+            <img src="./icons/grooming.png" alt="service_icon" />
+          </div>
+          <div class="service__text">
+            <div class="service__header">Hair Color</div>
+            <div class="service__dscr">There are many variations of ofeven slightly..</div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="icon__wrapper">
+            <img src="./icons/hair-salon.png" alt="service_icon" />
+          </div>
+          <div class="service__text">
+            <div class="service__header">Hair Cut and Styling</div>
+            <div class="service__dscr">There are many variations of ofeven slightly..</div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="icon__wrapper">
+            <img src="./icons/razor.png" alt="service_icon" />
+          </div>
+          <div class="service__text">
+            <div class="service__header">Head Shaved</div>
+            <div class="service__dscr">There are many variations of ofeven slightly..</div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="icon__wrapper">
+            <img src="./icons/haircut.png" alt="service_icon" />
+          </div>
+          <div class="service__text">
+            <div class="service__header">Spa Message</div>
+            <div class="service__dscr">There are many variations of ofeven slightly..</div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="icon__wrapper">
+            <img src="./icons/manicure.png" alt="service_icon" />
+          </div>
+          <div class="service__text">
+            <div class="service__header">Manicure & Pedicure</div>
+            <div class="service__dscr">There are many variations of ofeven slightly..</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="list">
+      <div class="container">
+        <h2 class="title">Price List</h2>
+      <div class="list__item">
+        <div class="list__name">Haircuts</div>
+        <div class="list__dscr">Clean & simple 30-40 minutes</div>
+        <div class="list__price">$120</div>
+        <div class="list__line"></div>
+      </div>
+      <div class="list__item">
+        <div class="list__name">Beard Trim</div>
+        <div class="list__dscr">Trim for the shorter beard</div>
+        <div class="list__price">$125</div>
+        <div class="list__line"></div>
+      </div>
+      <div class="list__item">
+        <div class="list__name">Fire & Ice</div>
+        <div class="list__dscr">Trim for the shorter beard</div>
+        <div class="list__price">$350</div>
+        <div class="list__line"></div>
+      </div>
+      <div class="list__item">
+        <div class="list__name">Head Massage</div>
+        <div class="list__dscr">A must for busy person</div>
+        <div class="list__price">$140</div>
+        <div class="list__line"></div>
+      </div>
+      <div class="list__item">
+        <div class="list__name">Chap Haircut</div>
+        <div class="list__dscr">Junior under 14</div>
+        <div class="list__price">$160</div>
+        <div class="list__line"></div>
+      </div>
+      <div class="list__item">
+        <div class="list__name">Skin Fade</div>
+        <div class="list__dscr">Haircut blands to skin</div>
+        <div class="list__price">$180</div>
+        <div class="list__line"></div>
+      </div>
+      <button class="list__btn">More Info</button>
+      </div>
+    </section>
+
+    <section class="transformation"></section>
+
+    <section class="barber">
+      <div class="barber__member">
+        <img src="" alt="" class="barber__img" />
+        <div class="barber__name"></div>
+        <div class="barber__dscr"></div>
+      </div>
+      <div class="barber__member">
+        <img src="" alt="" class="barber__img" />
+        <div class="barber__name"></div>
+        <div class="barber__dscr"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__map"></div>
+      <div class="footer__adrs"></div>
+      <div class="footer__hours"></div>
+      <div class="footer__social"></div>
+      <div class="footer__phone"></div>
+    </footer>
+
   </body>
 </html>
