@@ -99,6 +99,10 @@ nav a {
   padding: 115px 0 115px 0;
 }
 
+.list .list__item {
+  margin-top: 57px;
+}
+
 .list .title {
   font-size: 48px;
   color: #dc143c;
@@ -108,9 +112,11 @@ nav a {
 .list__name {
   font-size: 24px;
   font-weight: 900;
+  line-height: 30px;
   color: white;
 }
 .list__dscr {
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 400;
   color: white;
@@ -137,4 +143,59 @@ nav a {
   color: white;
   border: none;
   margin: 95px auto 112px auto;
+}
+
+.barber {
+  padding: 50px 0 80px 0;
+  min-height: 500px;
+  background: url(../img/barbershop-3.jpg) center center/cover no-repeat;
+  color: #fff;
+}
+
+.barber .title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.barber .barber__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.barber__member {
+  max-width: 390px;
+  text-align: center;
+}
+
+.barber__member .barber__img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.barber__wrapper .barber__member .barber__name {
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.barber__wrapper .barber__member .barber__dscr {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer .footer__phone {
+  min-height: 125px;
+  background-color: #232323;
+  text-align: center;
+}
+
+.footer .footer__phone .footer__tel {
+  display: block;
+  padding: 30px 0;
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
 }
