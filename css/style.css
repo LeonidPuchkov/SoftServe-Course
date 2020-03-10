@@ -686,12 +686,12 @@ header .logo_barber {
     font-size: 22px;
   }
 
-  ..transformation .transformation__item {
+  .transformation .transformation__item {
     width: 275px;
     height: 275px;
   }
 
-  . .barber {
+  .barber {
     padding: 0.8rem;
   }
 
