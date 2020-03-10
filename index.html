@@ -8,108 +8,143 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css" />
-    <title>New Course</title>
+
+    <title>Barbero</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <img class="logo_barber" src="./icons/logo_barber.o.png" alt="logo" />
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">Our Services</a>
-          <a href="#">Price</a>
-          <a href="#">Gallery</a>
-          <a href="#">Barbers</a>
-          <a href="#">Contacts</a>
-        </nav>
-      </div>
-    </header>
 
-    <section class="carousel">
+<header class="header" id="up">
+      <nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#"><img class="logo_barber" src="./icons/logo_barber.o.png" alt="logo" /></a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#OurServices">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Price">Price</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Barbers">Barbers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+
+
+<!-- <section class="carousel">
       <div class="container">
-        <!-- <img src="" alt="mainbckg_img" /> -->
-        <div class="carousel__dscr">
-          <p class="carousel__title">Making Your Look Awesome & Manly</p>
-          <button class="carousel__btn">More About Us</button>
+        <div class="carousel__inner">
+          <div class="carousel__block banner_1">
+            <p class="carousel__title">Making Your Look Awesome & Manly</p>
+            <button class="carousel__btn">More About Us</button>
+          </div>
+          <div class="carousel__block banner_2">
+            <p class="carousel__title">Making Your Look Awesome & Manly</p>
+            <button class="carousel__btn">Button 2</button>
+          </div>
+          <div class="carousel__block banner_3">
+            <p class="carousel__title">Making Your Look Awesome & Manly</p>
+            <button class="carousel__btn">Button 3</button>
+          </div>
         </div>
       </div>
-    </section>
+</section> -->
 
-    <section class="service">
+<section id="OurServices" class="service">
       <div class="container">
         <h2 class="title">Our Services</h2>
-        <img class="service__bg" src="./img/service_bg.jpg" alt="blade" />
-        <div class="service__item">
-          <div class="icon__wrapper">
-            <img src="./icons/beard.png" alt="service__icon" />
-          </div>
-          <div class="service__text">
-            <div class="service__header">Beard Shaper</div>
-            <div class="service__dscr">
-              There are many variations of ofeven slightly..
+          <div class="service__grid">
+            <div class="service__item item_1">
+              <div class="icon__wrapper">
+                <img src="./icons/beard.png" alt="service__icon" />
+              </div>
+              <div class="service__text">
+                <div class="service__header">Beard Shaper</div>
+                <p class="service__dscr">
+                  There are many variations of ofeven slightly..
+                </p>
+              </div>
+            </div>
+            <div class="service__item item_2">
+              <div class="icon__wrapper">
+                <img src="./icons/razor.png" alt="service_icon" />
+              </div>
+              <div class="service__text">
+                <div class="service__header">Head Shaved</div>
+                <p class="service__dscr">
+                  There are many variations of ofeven slightly..
+                </p>
+              </div>
+            </div>
+            <div class="service__item item_3">
+              <div class="icon__wrapper">
+                <img src="./icons/grooming.png" alt="service_icon" />
+              </div>
+              <div class="service__text">
+                <div class="service__header">Hair Color</div>
+                <p class="service__dscr">
+                  There are many variations of ofeven slightly..
+                </p>
+              </div>
+            </div>
+            <div class="service__item item_4">
+              <div class="icon__wrapper">
+                <img src="./icons/haircut.png" alt="service_icon" />
+              </div>
+              <div class="service__text">
+                <div class="service__header">Spa Message</div>
+                <p class="service__dscr">
+                  There are many variations of ofeven slightly..
+                </p>
+              </div>
+            </div>
+            <div class="service__item item_5">
+              <div class="icon__wrapper">
+                <img src="./icons/hair-salon.png" alt="service_icon" />
+              </div>
+              <div class="service__text">
+                <div class="service__header">Hair Cut and Styling</div>
+                <p class="service__dscr">
+                  There are many variations of ofeven slightly..
+                </p>
+              </div>
+            </div>
+            <div class="service__item item_6">
+              <div class="icon__wrapper">
+                <img src="./icons/manicure.png" alt="service_icon" />
+              </div>
+              <div class="service__text">
+                <div class="service__header">Manicure & Pedicure</div>
+                <p class="service__dscr">
+                  There are many variations of ofeven slightly..
+                </p>
+              </div>
+            </div>
+            <div class="service__img">
+              <img class="service__bg" src="./img/service_bg.jpg" alt="blade" />
             </div>
           </div>
-        </div>
-        <div class="service__item">
-          <div class="icon__wrapper">
-            <img src="./icons/grooming.png" alt="service_icon" />
-          </div>
-          <div class="service__text">
-            <div class="service__header">Hair Color</div>
-            <div class="service__dscr">
-              There are many variations of ofeven slightly..
-            </div>
-          </div>
-        </div>
-        <div class="service__item">
-          <div class="icon__wrapper">
-            <img src="./icons/hair-salon.png" alt="service_icon" />
-          </div>
-          <div class="service__text">
-            <div class="service__header">Hair Cut and Styling</div>
-            <div class="service__dscr">
-              There are many variations of ofeven slightly..
-            </div>
-          </div>
-        </div>
-        <div class="service__item">
-          <div class="icon__wrapper">
-            <img src="./icons/razor.png" alt="service_icon" />
-          </div>
-          <div class="service__text">
-            <div class="service__header">Head Shaved</div>
-            <div class="service__dscr">
-              There are many variations of ofeven slightly..
-            </div>
-          </div>
-        </div>
-        <div class="service__item">
-          <div class="icon__wrapper">
-            <img src="./icons/haircut.png" alt="service_icon" />
-          </div>
-          <div class="service__text">
-            <div class="service__header">Spa Message</div>
-            <div class="service__dscr">
-              There are many variations of ofeven slightly..
-            </div>
-          </div>
-        </div>
-        <div class="service__item">
-          <div class="icon__wrapper">
-            <img src="./icons/manicure.png" alt="service_icon" />
-          </div>
-          <div class="service__text">
-            <div class="service__header">Manicure & Pedicure</div>
-            <div class="service__dscr">
-              There are many variations of ofeven slightly..
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+</section>
 
-    <section class="list">
+    <section id="Price" class="list">
       <div class="container">
         <h2 class="title">Price List</h2>
         <div class="list__item">
@@ -148,13 +183,23 @@
           <div class="list__price">$180</div>
           <div class="list__line"></div>
         </div>
-        <button class="list__btn">More Info</button>
+        <button data-modal="consultation" class="list__btn">More Info</button>
       </div>
     </section>
 
-    <!--<section class="transformation"></section>-->
+    <section id="Gallery" class="transformation">
+      <div class="container">
+        <h2 class="title">Before & After Transformations</h2>
+        <div class="transformation__wrapper">
+          <div class="transformation__item" id="transformation1"></div>
+          <div class="transformation__item" id="transformation2"></div>
+          <div class="transformation__item" id="transformation3"></div>
+          <div class="transformation__item" id="transformation4"></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="barber">
+    <section id="Barbers" class="barber">
       <div class="container">
         <h2 class="title">Our Barbers</h2>
         <div class="barber__wrapper">
@@ -197,7 +242,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer id="Contacts" class="footer">
       <div class="footer__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6848431439157!2d-122.43750098468169!3d37.79742497975527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580da9d9f8605%3A0xa2bb277bbd2fad7d!2s3012%20Fillmore%20St%2C%20San%20Francisco%2C%20CA%2094123%2C%20USA!5e0!3m2!1sen!2sua!4v1581331915391!5m2!1sen!2sua"
@@ -210,9 +255,24 @@
       </div>
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__adrs"></div>
-          <div class="footer__hours"></div>
-          <div class="footer__social"></div>
+          <div class="footer__adrs">
+            <div class="footer__title">3012 Fillmore St, San Francisco,</div>
+            <div class="footer__dscr">CA 94123, United States</div>
+          </div>
+          <div class="footer__hours">
+            <div class="footer__title">
+              Working Hours:
+            </div>
+            <div class="footer__dscr">
+              Mon-Fri: 10:00-19:00 <br>
+              Sat-Sun: 11:00-18:00
+            </div>
+          </div>
+          <div class="footer__social">
+            <a href="#"><img src="./icons/insta_icon.png" alt="instagramm" class="social__icon"></a>
+            <a href="#"><img src="./icons/facebook_icon.png" alt="facebook" class="social__icon"></a>
+            <a href="#"><img src="./icons/youtube_icon.png" alt="youtube" clas s="social__icon"></a>
+          </div>
         </div>
       </div>
 
@@ -220,5 +280,30 @@
           <a href="tel:+8 800 00 60 60" class="footer__tel">+ 800 00 60 60</a>
         </div>
     </footer>
+
+    <div class="overlay">
+      <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Please, fill our contact form</div>
+        <div class="modal__dscr">Our manager will contact with you shortly</div>
+        <form action="feed-form">
+          <input name="name" required placeholder="Your Name" type="text">
+          <input type="phone" required placeholder="Your phone number" type="number">
+          <input type="email" required placeholder="Your email" type="email">
+          <button class="modal__btn">Submit callback</button>
+        </form>
+      </div>
+    </div>
+
+    <a href="#up" class="pageup">
+      <img src="./icons/chevron-circle-up-solid.svg" alt="page-up">
+    </a>
+
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

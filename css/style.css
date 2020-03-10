@@ -3,7 +3,7 @@
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -17,27 +17,90 @@ header .logo_barber {
   width: 162px;
   height: 44px;
 }
-nav {
-  display: block;
-  float: right;
-  font-size: 18px;
+
+.navbar {
+  background: #898989;
 }
-nav a {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-decoration: none;
-  color: #898989;
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
 .carousel {
-  min-height: 555px;
-  background: url(../img/main_bg.jpg) center center/cover no-repeat;
-  background-color: rgba(39, 34, 34, 0.67);
+  min-height: 400px;
+  background: #898989;
 }
+
+.carousel__inner {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.carousel .slick-prev {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 50%;
+  transform: rotateY(-50%);
+  left: -66px;
+}
+
+.carousel .slick-prev img {
+  height: 50px;
+  width: 31px;
+}
+
+.carousel .slick-next {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 50%;
+  transform: rotateY(-50%);
+  right: -66px;
+  left: auto;
+}
+
+.carousel .slick-next img {
+  height: 50px;
+  width: 31px;
+}
+
+.carousel .carousel__block {
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+.banner_1 {
+  background: url(../img/main_bg.jpg) center center/cover no-repeat;
+}
+
+.banner_2 {
+  background: url(../img/barber-invite-86379_1920.jpg) center center/cover no-repeat;
+}
+
+.banner_ {
+  background: url(../img/main_bg.jpg) center center/cover no-repeat;
+}
+
 .carousel__dscr {
   padding: 246px 0 76px 0;
 }
+
 .carousel__title {
   display: flex;
   justify-content: center;
@@ -47,8 +110,7 @@ nav a {
 }
 
 .carousel__btn {
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 249px;
   height: 48px;
   font-size: 24px;
@@ -59,48 +121,114 @@ nav a {
   margin: 143px auto 0 auto;
 }
 
+.service {
+  min-height: 300px;
+  padding: 2.5rem;
+}
+
 .service h2 {
   text-align: center;
   font-size: 48px;
   color: #dc143c;
 }
-.service__bg {
-  display: block;
-  width: 426px;
-  height: 426px;
+
+.service .service__grid {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 130px 130px 130px;
+  grid-template-areas: "item_1 img item_2""item_3 img item_4""item_5 img item_6";
+  grid-gap: 10px;
 }
+
+.service .service__img {
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__bg {
+  width: 300px;
+  height: 300px;
+}
+
+.service__item {
+  display: flex;
+}
+
+.item_1 {
+  grid-area: item_1;
+}
+
+.item_2 {
+  grid-area: item_2;
+}
+
+.item_3 {
+  grid-area: item_3;
+}
+
+.item_4 {
+  grid-area: item_4;
+}
+
+.item_5 {
+  grid-area: item_5;
+}
+
+.item_6 {
+  grid-area: item_6;
+}
+
+.service__item:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
 .service__item img {
   width: 64px;
   height: 64px;
   vertical-align: middle;
 }
+
 .icon__wrapper {
   border: 1px solid;
   height: 100px;
-  width: 100px;
+  min-width: 100px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.service__item .service__text {
+  margin-left: 12px;
+}
+
 .service__item .service__header {
   font-size: 18px;
   font-weight: 900;
+  display: inline-block;
 }
+
 .service__item .service__dscr {
   font-size: 16px;
   font-weight: 400;
+  display: inline-block;
 }
 
 .list {
-  min-height: 1215px;
+  min-height: 800px;
   background: url(../img/barbershop2.jpg) center center/cover no-repeat;
-  padding: 115px 0 115px 0;
+  padding: 2.5rem;
 }
 
 .list .list__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 30px 4px;
+  grid-template-areas: "name name""dscr price""line line";
   margin-top: 57px;
+  font-size: 24px;
 }
 
 .list .title {
@@ -109,30 +237,42 @@ nav a {
   text-align: center;
 }
 
-.list__name {
-  font-size: 24px;
+.list .list__item {
+  font-size: 20px;
+}
+
+.list .list__item .list__name {
+  grid-area: name;
   font-weight: 900;
   line-height: 30px;
   color: white;
 }
-.list__dscr {
+
+.list .list__item .list__dscr {
+  grid-area: dscr;
   margin-bottom: 20px;
-  font-size: 24px;
   font-weight: 400;
   color: white;
+  margin-top: 6px;
 }
-.list__price {
-  font-size: 24px;
+
+.list .list__item .list__price {
+  grid-area: price;
   font-weight: 400;
   color: #dc143c;
-  float: right;
+  margin-top: 6px;
+  text-align: right;
 }
-.list__line {
+
+.list .list__item .list__line {
+  grid-area: line;
   background-color: #fff;
-  width: 1000px;
+  width: 1fr;
   height: 4px;
+  margin-top: 12px;
 }
-.list__btn {
+
+.list .list__btn {
   width: 244px;
   height: 55px;
   display: flex;
@@ -142,14 +282,70 @@ nav a {
   text-align: center;
   color: white;
   border: none;
-  margin: 95px auto 112px auto;
+  margin: 95px auto 50px auto;
 }
 
 .barber {
-  padding: 50px 0 80px 0;
+  padding: 2.5rem;
   min-height: 500px;
   background: url(../img/barbershop-3.jpg) center center/cover no-repeat;
   color: #fff;
+}
+
+.transformation {
+  min-height: 800px;
+  padding: 35px 0 54px 0;
+}
+
+.transformation .title {
+  font-size: 48px;
+  text-align: center;
+  color: #444444;
+}
+
+.transformation .transformation__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.transformation .transformation__item {
+  margin: 10px auto;
+  width: 350px;
+  height: 350px;
+}
+
+#transformation1 {
+  background: url(../img/transformation1.jpg) center center/cover no-repeat;
+}
+
+#transformation1:hover {
+  background: url(../img/transformation2.jpg) center center/cover no-repeat;
+}
+
+#transformation2 {
+  background: url(../img/transformation2_1.jpg) center center/cover no-repeat;
+}
+
+#transformation2:hover {
+  background: url(../img/transformation2_2.jpg) center center/cover no-repeat;
+}
+
+#transformation3 {
+  background: url(../img/transformation3_2.jpg) center center/cover no-repeat;
+}
+
+#transformation3:hover {
+  background: url(../img/transformation3_1.jpg) center center/cover no-repeat;
+}
+
+#transformation4 {
+  background: url(../img/transformation4_1.jpg) center center/cover no-repeat;
+}
+
+#transformation4:hover {
+  background: url(../img/transformation4_2.jpg) center center/cover no-repeat;
 }
 
 .barber .title {
@@ -186,8 +382,38 @@ nav a {
   font-size: 14px;
 }
 
+.footer .footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  min-height: 130px;
+  align-items: flex-start;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 30px 0 10px 0;
+  color: #444444;
+}
+
+.footer .footer__wrapper .footer__title {
+  font-weight: bold;
+}
+
+.footer .footer__wrapper .footer__dscr {
+  font-weight: lighter;
+}
+
+.footer .footer__social {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer__social .social__icon img {
+  width: 44px;
+  height: 44px;
+}
+
 .footer .footer__phone {
-  min-height: 125px;
+  min-height: 110px;
   background-color: #232323;
   text-align: center;
 }
@@ -198,4 +424,298 @@ nav a {
   font-size: 36px;
   color: #fff;
   text-decoration: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  min-height: 480px;
+  background-color: #f2f2f2;
+  padding: 38px 40px 40px 40px;
+}
+
+.modal .modal__close {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  font-size: 41px;
+  line-height: 21px;
+  color: red;
+  cursor: pointer;
+}
+
+
+.modal input {
+  display: block;
+  font-size: 1.5rem;
+  margin: 15px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal .modal__subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.modal .modal__dscr {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#consultation {
+  display: none;
+}
+
+.modal .modal__btn {
+  width: 244px;
+  height: 55px;
+  display: block;
+  font-size: 24px;
+  background-color: #dc143c;
+  text-align: center;
+  color: white;
+  border: none;
+  margin: 0 auto;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.pageup img {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 907px) {
+
+  .service .service__grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 300px;
+  }
+
+  .service .service__img {
+    display: none;
+  }
+
+  .service__item {
+    margin: 5px;
+  }
+
+  .service__item:nth-child(2n + 1) {
+    flex-direction: row;
+  }
+
+  .service__item img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon__wrapper {
+    height: 80px;
+    min-width: 80px;
+  }
+
+  .service__item .service__dscr {
+    display: block;
+  }
+
+  .list {
+    padding-top: 1rem;
+  }
+
+  .list__item {
+    margin-top: 30px;
+  }
+
+  .list .list__item .list__line {
+    height: 3px;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 906px) {
+  .service {
+    padding: 20px 10px;
+  }
+
+  .service .title {
+    font-size: 38px;
+  }
+
+
+  .service .service__grid {
+    max-height: 220px;
+  }
+
+  .icon__wrapper {
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .service__item img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .service__item .service__text {
+    margin-left: 8px;
+  }
+
+  .service__item .service__text .service__dscr {
+    font-size: 13px;
+  }
+
+  .list {
+    padding: 0.9rem;
+  }
+
+  .list .title {
+    font-size: 38px;
+  }
+
+  .list .list__item {
+    font-size: 17px;
+  }
+
+  .transformation .title {
+    font-size: 38px;
+  }
+
+  .transformation .transformation__item {
+    width: 300px;
+    height: 300px;
+  }
+
+  .barber {
+    padding: 30px 0px 50px 0px;
+  }
+
+  .barber .title {
+    font-size: 38px;
+  }
+
+  footer .footer__wrapper {
+    font-size: 16px;
+  }
+
+  .footer .footer__phone .footer__tel {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 525px) and (max-width: 767px) {
+  .service {
+    padding: 10px;
+  }
+
+  .service .title {
+    font-size: 30px;
+  }
+
+  .service .service__grid {
+    margin: 0 auto;
+    max-height: 550px;
+  }
+
+  .list .title {
+    font-size: 30px;
+  }
+
+  .transformation .title {
+    font-size: 30px;
+  }
+
+  .barber .title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 524px) {
+  .service {
+    padding: 1rem;
+  }
+
+  .service .title {
+    font-size: 22px;
+  }
+
+  .service .service__grid {
+    font-size: 12px;
+    max-height: fit-content;
+  }
+
+  .list .title {
+    font-size: 22px;
+  }
+
+  .list .list__item {
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 30px 4px;
+    grid-template-areas: "name price""line line";
+  }
+
+  .list .list__item .list__dscr {
+    display: none;
+  }
+
+  .transformation .title {
+    font-size: 22px;
+  }
+
+  ..transformation .transformation__item {
+    width: 275px;
+    height: 275px;
+  }
+
+  . .barber {
+    padding: 0.8rem;
+  }
+
+  .barber .title {
+    font-size: 22px;
+  }
+
+  .barber .barber__wrapper {
+    flex-direction: column;
+  }
+
+
+  .footer .footer__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .footer__wrapper .footer__adrs {
+    margin-bottom: 10px;
+  }
+
+  .footer .footer__wrapper .footer__hours {
+    margin-bottom: 10px;
+  }
 }
