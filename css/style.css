@@ -7,6 +7,7 @@
   margin: 0 auto;
 }
 
+/* Header */
 header {
   min-height: 80px;
 }
@@ -40,7 +41,89 @@ header .logo_barber {
   justify-content: flex-end;
 }
 
-.carousel {
+/* Slider */
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  /* color: #dc143c; */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+/* Caption text */
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 2.5rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 55%;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel__btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 249px;
+  height: 48px;
+  font-size: 1.5rem;
+  background-color: #dc143c;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+#bannerpopup {
+  overflow: scroll;
+}
+
+.modal__text {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+/* .carousel {
   min-height: 400px;
   background: #898989;
 }
@@ -119,7 +202,7 @@ header .logo_barber {
   color: white;
   border: none;
   margin: 143px auto 0 auto;
-}
+} */
 
 .service {
   min-height: 300px;
@@ -449,7 +532,8 @@ header .logo_barber {
 .modal .modal__close {
   position: absolute;
   top: 0;
-  right: -40px;
+  right: 5px;
+  top: 5px;
   font-size: 41px;
   line-height: 21px;
   color: red;
@@ -655,6 +739,17 @@ header .logo_barber {
 }
 
 @media (min-width: 320px) and (max-width: 524px) {
+  .slideshow-container .text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .slideshow-container .carousel__btn {
+    width: 180px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
   .service {
     padding: 1rem;
   }
